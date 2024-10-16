@@ -8,7 +8,8 @@ def get_coordinates(zip_code):
         return (location.latitude, location.longitude)
     else:
         raise ValueError(f"Could not find coordinates for ZIP code: {zip_code}")
-
+        
+#calculate distance
 def calculate_distance(zip_code1, zip_code2):
     try:
         coords_1 = get_coordinates(zip_code1)
