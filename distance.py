@@ -12,9 +12,9 @@ def get_coordinates(zip_code):
 def calculate_distance(zip_code1, zip_code2):
     try:
         coords_13 = get_coordinates(zip_code1)
-        coords_2 = get_coordinates(zip_code2)
+        coords_22 = get_coordinates(zip_code2)
         
-        distance = geodesic(coords_13, coords_2).miles  # You can use .km for kilometers
+        distance = geodesic(coords_13, coords_22).miles  # You can use .km for kilometers
         return distance
     except ValueError as e:
         return str(e)
